@@ -619,7 +619,16 @@
     color: #14212A;
 }
 
-
+.circle-text {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 20px;
+    line-height: 31px;
+    text-align: center;
+    color: #14212A;
+}
 
 
 
@@ -688,8 +697,17 @@
 
     }
 
+    .team-members-container {
+        display: none;
+    }
 
+    .member-name-designation {
+        display: none;
+    }
 
+    .circle-text {
+        text-align: left;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -788,9 +806,7 @@
         padding-left: 40px;
     }
 
-    .team-members-container {
-        height: 420px;
-    }
+
 }
 
 
