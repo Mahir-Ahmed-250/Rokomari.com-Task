@@ -28,7 +28,7 @@
                 loadVideo.load();
             });
 
-            $win.scroll(function () { // video to play when is on viewport 
+            $win.scroll(function () {
 
                 $('video').each(function () {
                     if (isScrolledIntoView(this) == true) {
@@ -38,9 +38,9 @@
                     }
                 });
 
-            });  // video to play when is on viewport
+            });
 
-        } // end .field--name-field-video
+        }
 
 
     });
