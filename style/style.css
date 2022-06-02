@@ -513,6 +513,88 @@
     margin-bottom: 60px;
 }
 
+/* What We Do */
+
+.what-we-do-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 219px;
+    padding-left: 171px;
+    padding-bottom: 118px;
+    margin-top: 130px;
+    position: relative;
+    background-color: #14212A;
+
+}
+
+
+.what-we-do-text {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 57px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+.what-we-do-details {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #C2D9EB;
+    margin-top: 32px;
+    margin-bottom: 17px;
+}
+
+.bullet-icon-2 {
+    color: #C2D9EB;
+}
+
+
+.bullet-point-2 {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #C2D9EB;
+}
+
+/* Achievement */
+
+.achievement {
+    background: #F5F5F5;
+    height: 100vh;
+    margin-top: -430px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -577,6 +659,16 @@
         display: none;
     }
 
+    .what-we-do-container {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 219px;
+        padding-left: 10px;
+        padding-bottom: 118px;
+        margin-top: 130px;
+        background-color: #14212A;
+
+    }
 
 
 }
@@ -665,6 +757,11 @@
 
     .business-solution-card-vector {
         display: none;
+    }
+
+    .what-we-do-container {
+        flex-direction: column;
+        margin-top: 40px;
     }
 }
 
