@@ -197,7 +197,12 @@
 }
 
 .about-us-img:hover {
-    transform: translateY(-50px)
+    animation: MoveUpDown 0.8s linear infinite;
+    position: relative;
+}
+
+.minus-icon {
+    margin-right: 21px;
 }
 
 .about-us-text {
@@ -236,7 +241,7 @@
 }
 
 .button-about {
-    background-color: #162029;
+    background-color: #FF4917;
     border-radius: 34px;
     height: 70px;
     width: 212px;
@@ -244,7 +249,8 @@
 }
 
 .button-inside-color-about {
-    background-color: #FF4917;
+    background-color: #162029;
+
     border-radius: 34px;
     height: 60px;
     width: 90px;
@@ -263,22 +269,269 @@
 }
 
 
+/* Company Services */
+
+.company-services {
+    margin-top: 134px;
+    height: 100%;
+    padding-bottom: 100px;
+    background: #F5F5F5;
+}
+
+.minus-icon-left {
+    margin-right: 13px;
+}
+
+.minus-icon-right {
+    margin-left: 13px;
+}
+
+.company-services-heading {
+    margin-top: -255px;
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+    color: #FF4917;
+}
+
+.company-services-title {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #14212A;
+}
+
+.service-cards {
+    margin-top: 69px;
+}
+
+.service-vector {
+    margin-top: -660px;
+    float: right;
+}
+
+
+
+.service-icon {
+    height: 80px;
+    width: 75px;
+    margin: 60px auto 33px;
+}
+
+.service-card:hover {
+    animation: MoveUpDown 1s linear infinite;
+    position: relative;
+}
+
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 20px;
+    }
+}
+
+.service-card-title {
+    text-align: center;
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    color: #14212A;
+}
+
+.service-card-text {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #616161;
+}
+
+.service-card:after {
+    display: block;
+    content: '';
+    border-bottom: solid 9px #FF4917;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+    transform-origin: 100% 50%
+}
+
+.service-card:hover:after {
+    transform: scaleX(1);
+    transform-origin: 0 75%;
+}
+
+
+
+/* Video Player */
+
+.play-button-outer {
+
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.play-button {
+    margin: 0 auto;
+    top: 25%;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 2.5em 0 2.5em 5em;
+    border-color: transparent transparent transparent #FF4917;
+    opacity: .75;
+    transition-duration: 0.1s;
+    transition-property: transform;
+}
+
+
+.play-button:hover {
+    border-color: transparent transparent transparent #14212A;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+
+/* .overlay-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background: #162029BF;
+
+} */
+.video-text-button-container {
+    position: static;
+    margin-top: -500px;
+}
+
+.video-button-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video-heading-text {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.video-title-text {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 57px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+.video-details-text {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Media Queries*/
 
 @media screen and (min-width: 980px) {}
 
-@media screen and (max-width: 1200px) {
-    .banner-text-top {
+@media screen and (max-width: 920px) {
+    .service-card-title {
+        font-size: 16px;
+    }
+
+    .service-vector-2 {
         display: none;
     }
 
+    .video-text-button-container {
+
+        margin-top: -220px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+
+    .banner-text-top {
+        font-size: 26px !important;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+    }
+
+
     .banner-text-middle {
-        display: none;
+
+        font-size: 16px !important;
+        line-height: 20px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
     }
 
     .button-banner {
         display: none;
+    }
+
+    .carousel-button {
+        display: block;
     }
 
     .about-us-img {
@@ -292,7 +545,16 @@
         margin-top: 40px;
     }
 
+    .service-vector {
+        display: none;
+    }
+
+    .company-services {
+
+        background: #ffffff;
+    }
 }
+
 
 @media screen and (max-width: 1366px) {
     .nav-art {
@@ -315,13 +577,9 @@
 
 
     .banner-text-middle {
-        font-family: 'Assistant';
-        font-style: normal;
-        font-weight: 700;
+
         font-size: 51px;
-        line-height: 106px;
-        letter-spacing: -0.02em;
-        color: #FFFFFF;
+
     }
 
     .button-banner {
