@@ -318,8 +318,6 @@
     float: right;
 }
 
-
-
 .service-icon {
     height: 80px;
     width: 75px;
@@ -528,7 +526,6 @@
 
 }
 
-
 .what-we-do-text {
     font-family: 'Assistant';
     font-style: normal;
@@ -553,7 +550,6 @@
 .bullet-icon-2 {
     color: #C2D9EB;
 }
-
 
 .bullet-point-2 {
     font-family: 'Assistant';
@@ -583,6 +579,7 @@
 
 }
 
+/* Team Members */
 
 .team-members-container {
     height: 600px;
@@ -603,11 +600,9 @@
     color: #FCFCFC;
 }
 
-
 .team-members-cards {
     padding-top: 90px;
 }
-
 
 .member-name-designation {
     font-family: 'Assistant';
@@ -618,6 +613,8 @@
     letter-spacing: -0.02em;
     color: #14212A;
 }
+
+/* Company Overview */
 
 .circle-text {
     font-family: 'Assistant';
@@ -630,12 +627,165 @@
     color: #14212A;
 }
 
+/* Blogs */
+
+.blog-title {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 57px;
+    letter-spacing: -0.02em;
+    color: #14212A;
+}
+
+.blog-text-button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blog-card-date {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    color: #FF4917;
+}
+
+.blog-card-title {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    letter-spacing: -0.02em;
+    color: #14212A;
+}
+
+.blog-card-text {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #616161;
+}
+
+.blog-card-learn-text {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #14212A;
+}
+
+
+/* Footer */
+
+footer {
+    background: #14212A;
+    height: 788px;
+}
+
+.footer-company-title {
+
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 59px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+.footer-company-text {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #788B9A;
+}
+
+.subscribe-text {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+
+}
+
+.inp {
+    border: none;
+    background: #14212A;
+    border-bottom: 1px solid #34495C;
+    ;
+    padding: 5px 10px;
+    outline: none;
+    color: #788B9A;
+    width: 383px;
+    margin-top: 20px;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: text-indent 0.4s 0.4s ease;
+    text-indent: -100%;
+    opacity: 1;
+}
+
+
+
+.footer-top-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-container {
+    margin-top: 184px;
+}
+
+.subscribe-container {
+    display: flex;
+    border: 1px solid #788B9A;
+    margin-top: 184px;
+    padding-left: 40px;
+    padding-top: 43px;
+    padding-right: 63px;
+    padding-bottom: 53px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /*Media Queries*/
 
-@media screen and (min-width: 980px) {}
+
 
 
 
@@ -707,6 +857,32 @@
 
     .circle-text {
         text-align: left;
+    }
+
+    .blog-text-button-container {
+        flex-direction: column;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    .company-container {
+        margin-top: 40px;
+    }
+
+    .footer-top-container {
+        flex-direction: column;
+    }
+
+    .subscribe-container {
+        flex-direction: column;
+        margin-top: 40px;
+        border: none;
+    }
+
+    .inp {
+        width: 200px;
     }
 }
 
@@ -806,6 +982,27 @@
         padding-left: 40px;
     }
 
+    footer {
+        height: 100%;
+    }
+
+    .company-container {
+        margin-top: 40px;
+    }
+
+    .footer-top-container {
+        flex-direction: column;
+    }
+
+    .subscribe-container {
+        flex-direction: column;
+        margin-top: 40px;
+        border: none;
+    }
+
+    .inp {
+        width: 200px;
+    }
 
 }
 
