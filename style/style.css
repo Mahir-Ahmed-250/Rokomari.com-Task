@@ -760,8 +760,25 @@ footer {
     padding-bottom: 53px;
 }
 
+.footer-link-title {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
 
-
+.footer-links {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    color: #788B9A;
+}
 
 
 
